@@ -246,7 +246,7 @@ nav {
     color: red;
     -webkit-text-stroke: 0.1vw red;
     text-transform: uppercase;
-    margin: 15px 0px;
+    margin: 20px 0px;
 }
 
 .hero-text h2::before{
@@ -262,6 +262,60 @@ nav {
     overflow: hidden;
     animation: animate 3s linear infinite;
     
+}
+
+.cta-btn{
+    width: 250px;
+    border-radius: 0px;
+    border: 1px solid #553264;
+    background: black;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    cursor: pointer;
+    margin:10px;
+    color: red;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    animation: btn-load 1s ease forwards;
+    
+}
+
+/* .ctaBTN2{
+    width: 200px;
+    margin-top: 18px;
+    background:#156466;
+    font-weight: lighter;
+} */
+
+
+
+.cta-btn::before{
+    content: "";
+    position: absolute;
+    left: 0.95;
+    width: 100%;
+    height: 0%;
+    background-color: red;
+    transition: 0.6s;
+    z-index: -1;  
+}
+
+.cta-btn::before{
+    top: -1;
+    border-radius: 0 0 50% 50%;  
+}
+
+.cta-btn:hover::before{
+    height: 190%;
+    color: black;
+}
+
+button:hover{
+    color: black;
 }
 
 /* .hero-text .dev{
@@ -454,6 +508,41 @@ nav {
     background-color: rgb(132, 83, 11);
     overflow: hidden;
 } */
+}
+
+@media only screen and (max-width: 650px){
+    .hero-img{
+        width: 50%;
+        height: 80%;
+        display: none;
+    }
+    
+    .hero-img img{
+        width: 85%;
+        height: 85%;
+        object-fit: contain;
+    }
+
+    .hero-text{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    
+    .hero-text h2{
+        position: relative;
+        color: transparent ;
+        font-size: 12vw;
+        color: red;
+        -webkit-text-stroke: 0.1vw red;
+        text-transform: uppercase;
+        margin: 15px 0px;
+    }
 }
 
 @media only screen and (max-width: 530px){
