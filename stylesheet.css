@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 5vw;
+}
+
+.displayNone{
+    display: none;
+}
+
+.top{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: scale(1, 1);
+    transform-origin: left;
+    animation:  slide1 2s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+
+
+.hello-Container{
+    width: 60%;
+    height: 200px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.bottom{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    transform: scale(1, 1);
+    transform-origin: right;
+    animation:  slide1 2s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+.welcome-Container{
+    width: 60%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.hello-Container h1{
+position: absolute;
+bottom: -20%;
+transform: rotate(30deg);
+transform-origin: bottom left;
+animation: rotate1 2s ease-in-out;
+animation-fill-mode: forwards;
+}
+
+.welcome-Container h1{
+    position: absolute;
+    bottom: -20%;
+    opacity: 0;
+    transform: rotate(30deg);
+    transform-origin: bottom left;
+    animation: rotate1 2s ease-in-out ;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    }
+
+    .welcome-Container,.hello-Container{
+        animation: containerAnimation 3s ease-in-out ;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+    }
+
+@keyframes rotate1 {
+    
+        0%
+        {
+            opacity: 0;
+            transform: rotate(30deg);
+        }
+        70%,90%,100%
+        {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes containerAnimation {
+    
+        0%
+        {
+            opacity: 1;
+        }
+        70%,90%,100%
+        {
+            opacity: 0;
+           
+        }
+    }
+
+    @keyframes slide1 {
+    
+        0%
+        {
+            transform: scale(1, 1);
+        }
+        70%,90%,100%
+        {
+            transform: scale(0, 1);
+           
+        }
+    }
+
+
+
+
+/* header section and all things that pertain it such as navbar and its links */
+
+header {
+    width: 100%;
+    z-index: 1;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: #000000;
+    animation: nav-load 1.5s ease-in;
+    position: relative;
+}
+
+nav {
+    padding: 0px;
+    margin: -10px;
+    position: absolute;
+    right: 5%;
+}
+
+.logo-link{
+    width:60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-link img{
+   width:75%;
+}
+
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 25px;
+    margin: 0px auto;
+    list-style: none;
+}
+
+
+.nav_links li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+    color: #FF3F2F;
+    transition: 0.3s ease-in-out;
+}
+
+
+.nav_links li a:hover {
+    color: #C7E3EF;
+    border-bottom: solid #FF3F2F;
+    padding-bottom: 2px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/*Hero-section containing my image and header describing briefly about myself  */
+
+.hero-Container{
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+    background-image: url(assets/17973908-p-2600.jpeg);
+    object-fit: cover;
+    background-position: bottom bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.hero-text h2{
+    position: relative;
+    color: transparent ;
+    font-size: 6vw;
+    color: red;
+    -webkit-text-stroke: 0.1vw red;
+    text-transform: uppercase;
+    margin: 15px 0px;
+}
+
+.hero-text h2::before{
+    content: attr(data-text) attr(data-space) attr(data-text2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height:100%;
+    color: #000000;
+    -webkit-text-stroke: 0vw red;
+    border-right: 4px solid #000000;
+    overflow: hidden;
+    animation: animate 3s linear infinite;
+    
+}
+
+/* .hero-text .dev{
+    color: rgb(97, 97, 186);
+    -webkit-text-stroke: 0.1vw ;
+}
+
+.hero-text .dev::before{
+    content: attr(data-text) attr(data-space) attr(data-text2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height:100%;
+    color: #000000;
+    -webkit-text-stroke: 0vw blue;
+    border-right: 2px solid #000000;
+    overflow: hidden;
+    animation: animate 3s linear infinite;
+}
+   */
+
+
+
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0; 
+    }
+    70%,90%
+    {
+        width: 100%; 
+    }
+}
+
+.hero-img{
+    width: 50%;
+    height: 80%;
+}
+
+.hero-img img{
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+
+
+
+
+/* About me section */
+
+.about{
+    width: 100%;
+    height: 50vh;
+    background-color: tan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 2000px){
+    .hello-Container{
+        width: 70%;
+        height: 250px;
+        font-size: 5vw;
+    }
+    .welcome-Container{
+        width: 70%;
+        height: 250px;
+        font-size: 5vw;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px){
+    /* .hero-Container{
+        height: 70vh;
+    }
+
+    .hero-Container img {
+        object-fit: cover;
+    } */
+
+    .hello-Container h1{
+        bottom: -10%;
+        }
+        
+        .welcome-Container h1{
+            bottom: -10%;
+        }
+
+        .hello-Container{
+            width: 70%;
+            height: 150px;
+            font-size: 6vw;
+        }
+        .welcome-Container{
+            width: 70%;
+            height: 150px;
+            font-size: 6vw;
+        }
+
+}
+
+
+@media only screen and (max-width: 700px){
+
+    .nav_links{
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+       align-items: center;
+        flex-direction: column;
+    }
+
+    .nav_links li {
+        display: block;
+        padding: 0px;
+        margin: 20px 0px;
+        width: 50%;
+        text-align: center;
+    }
+
+    nav {
+        width: 30%;
+        height: 300px;
+        text-align: left;
+        position: absolute;
+        top: 99.99%;
+        right: 0%;
+        /* left: 0%; */
+        background-color: #000000;
+        padding: 0px 0%;
+        margin: 0 auto;
+        transform: scale(0, 1);
+        transform-origin: right;
+        transition: transform 400ms ease-in-out;
+        z-index: 10000000;
+        color: whitesmoke; 
+    }
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background-color: red;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 9px;
+}
+
+.nav-toggle-label span::after {
+    top: 9px;
+}
+
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+}
+
+/* HERO Container */
+/* .hero-Container{
+    width: 100%;
+    height: 45vh;
+    background-color: rgb(132, 83, 11);
+    overflow: hidden;
+} */
+}
+
+@media only screen and (max-width: 530px){
+
+
+.hello-Container h1{
+    bottom: 0%;
+    }
+    
+    .welcome-Container h1{
+        bottom: 0%;
+    }
+
+    .hello-Container{
+        width: 80%;
+        height: 120px;
+        font-size: 7vw;
+    }
+    .welcome-Container{
+        width: 80%;
+        height: 120px;
+        font-size: 7vw;
+    }
+}
