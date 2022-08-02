@@ -261,6 +261,7 @@ nav {
     border-right: 4px solid #000000;
     overflow: hidden;
     animation: animate 3s linear infinite;
+    animation-delay: 5s;
     
 }
 
@@ -369,17 +370,231 @@ button:hover{
 
 /* About me section */
 
+/* clippaths video section */
+
 .about{
     width: 100%;
-    height: 50vh;
-    background-color: tan;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#EDF6FF;
+    overflow: hidden;
+}
+
+.clipPathDiv{
+    width: 95%;
+    height: 100%;
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.ClipContainer{
+    width: 100%;
+    max-width: 1500px;
+    height: 750px;
+    overflow: hidden;
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.ClipContainer h1{
+    margin: 10px 0px;
+    color: black;
+    position: absolute;
+    top: 0;
+}
+
+.ClipContainer .TikTok{
+    color: red;
+    border-bottom: solid red 3px;
+}
+
+.ClipContainer .box{
+    position: absolute;
+    width: 70%;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+    object-fit: cover;  
+
+ 
+}
+
+.ClipContainer .box img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: contain;
+
+}
+
+.ClipContainer .box video{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: contain;
+    
+}
+
+.ClipContainer .box.box1{
+    clip-path: polygon(30% 0, 0 0, 0 100%, 45% 100%);
+}
+.ClipContainer .box.box2{
+    clip-path: polygon(70% 0, 30% 0, 45% 100%, 55% 100%);
+    }
+    .ClipContainer .box.box3{
+        clip-path: polygon(100% 0, 70% 0, 55% 100%, 100% 100%);
+
+        }
+
+.ClipContainer .content{
+    padding: 20px;
+    margin: 20px;
+    z-index: 10;
+}
+
+.ClipContainer .content h2{
+color: white;
+font-size: 12vw;
+}
+
+.ClipContainer .box.active{
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.ClipContainer .box:hover{
+z-index: 1000;
+}
+
+.ClipContainer .content{
+    padding: 20px;
+    margin: 20px;
+    z-index: 10;
+    opacity: 0;
+    transform: 1s;
+}
+
+.ClipContainer .box.active .content{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+/* about me Aside section */
+
+.wrapper{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.wrapper h2{
+    padding: 0;
+    margin: 20px 0px;
+    color: black;
+    text-shadow: 0 2px 0 rgba(137, 132, 132, 0.5);
+    font-size: 50px;
+}
+
+.wrapper p {
+    color: black;
+    width: 70%;
+    margin: 10px 0px;
+    font-size: 18px;
+    line-height: 35px;
 }
 
 
+.wrapper span::before{
+content: "";
+animation: animateText infinite 10s;
+color: red;
+border-bottom: solid red 2px;
+}
 
+@keyframes animateText {
+    0%{
+        content: "Content Creator";
+} 
+10%{
+    content: "Content Creator";
+}
+20%{
+    content: "Creative Thinker";
+} 
+30%{
+    content: "Creative Thinker";
+}
+40%{
+    content: "Problem Solver";
+} 
+50%{
+    content: "Problem Solver";
+}
+60%{
+    content: "Developer";
+} 
+70%{
+    content: "Developer";
+}
+80%{
+    content: "Designer";
+} 
+90%{
+    content: "Designer";
+}
+100%{
+    content: "Mentor";
+} 
+}
 
+/* Projects Section */
+.Projects{
+    width: 100%;
+    height: auto;
+    background-color: #EDF6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.projectContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.Project{
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    margin: 20px;
+    border: solid black 3px;
+}
+
+.Project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -399,6 +614,17 @@ button:hover{
     }
 }
 
+
+@media only screen and (max-width: 1200px){
+
+    .ClipContainer {
+        width: 100%;
+        max-width: 1500px;
+        height: 550px;
+    }
+
+    
+}
 
 
 @media only screen and (max-width: 1000px){
@@ -501,6 +727,26 @@ button:hover{
     opacity: 1;
 }
 
+.ClipContainer {
+    width: 100%;
+    max-width: 1500px;
+    height: 420px;
+    /* background-color: red; */
+}
+
+.ClipContainer .box {
+    position: absolute;
+    width: 90%;
+}
+
+.wrapper p {
+    color: black;
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
 /* HERO Container */
 /* .hero-Container{
     width: 100%;
@@ -566,4 +812,84 @@ button:hover{
         height: 120px;
         font-size: 7vw;
     }
+
+    .ClipContainer {
+        width: 100%;
+        max-width: 1500px;
+        height: 350px;
+        /* background-color: red; */
+    }
+
+    .ClipContainer h1{
+        font-size: 18px;
+    }
+    
+    .ClipContainer .box {
+        position: absolute;
+        width: 90%;
+    }
+    
 }
+
+/* scroll animation */
+
+.reveal {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+
+}
+
+.reveal.active {
+
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.reveal1 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 1s ease;
+
+}
+
+.reveal1.active1 {
+
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.reveal2 {
+    opacity: 0;
+    transition: all 2s ease;
+
+}
+
+.reveal2.active2 {
+    opacity: 1;
+
+}
+
+.reveal3{
+    transform: translateX(40px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .reveal3.active3 {
+  
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  
+  .reveal4{
+    transform: translateX(-40px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .reveal4.active4 {
+  
+    transform: translateX(0px);
+    opacity: 1;
+  }
