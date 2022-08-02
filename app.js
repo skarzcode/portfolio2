@@ -3,6 +3,23 @@ const images = ["assets/Untitled-design-3-p-1080.png", "assets/glitch-image-1659
 const timer = ms => new Promise(res => setTimeout(res, ms));
 const overlay = document.querySelector(".overlay");
 let box = document.querySelectorAll(".box");
+const overlay2 = document.querySelector(".project-overlay");
+const projects = document.querySelectorAll(".Project");
+const closeBtn = document.querySelector(".close");
+const ProjectInfo = document.querySelector(".Project-info");
+
+projects.forEach((proj) => {
+    proj.addEventListener("click", function(){
+      overlay2.classList.add("overlaySlideIn");
+      ProjectInfo.classList.add("projOpacity");
+    })
+})
+
+closeBtn.addEventListener("click", function(){
+    overlay2.classList.remove("overlaySlideIn");
+    ProjectInfo.classList.remove("projOpacity");
+});
+
 box.forEach((popup) => {
     popup.addEventListener("click", () => {
         popup.classList.toggle("active");
