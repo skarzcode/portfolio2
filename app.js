@@ -149,6 +149,7 @@ function renderElement (i){
 
 projects.forEach((proj) => {
     proj.addEventListener("click", function(){
+        if(overlay2){
       overlay2.classList.add("overlaySlideIn");
       ProjectInfo.classList.add("projOpacity");
       if(proj.id == 0){
@@ -164,6 +165,7 @@ projects.forEach((proj) => {
       } else if (proj.id == 5){
         renderElement(5);
       };
+    }
     })
 })
 

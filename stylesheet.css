@@ -9,6 +9,7 @@
 body{
     position: relative;
     font-family: 'Poppins', sans-serif;
+    background-color: #171819;
 }
 
 .overlay{
@@ -20,7 +21,7 @@ body{
     height: 100vh;
     background-color: transparent;
     z-index: 1;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -382,6 +383,7 @@ button:hover{
     align-items: center;
     background-color:#171819;
     overflow: hidden;
+    margin: 50px auto;
 }
 
 .clipPathDiv{
@@ -401,7 +403,7 @@ button:hover{
     max-width: 1500px;
     height: 750px;
     overflow: hidden;
-    margin-top: 25px;
+    margin: 30px 0px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -505,6 +507,7 @@ z-index: 1000;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin: 20px auto;
 }
 
 .wrapper h2{
@@ -742,7 +745,9 @@ transition: 1s ease-in-out;
     margin: 30px;
     border: solid whitesmoke 3px;
     cursor: pointer;
+    position: relative;
 }
+
 
 .Project img{
     width: 100%;
@@ -751,9 +756,14 @@ transition: 1s ease-in-out;
     transition: 0.5s ease-in-out;
 }
 
-.Project img:hover{
-    transform: scale(1.1);
+.LiveSite{
+    display: none;
 }
+
+
+/* .Project img:hover{
+    transform: scale(1.1);
+} */
 
 
 
@@ -864,6 +874,7 @@ transition: 1s ease-in-out;
             background-color: red;
         }
 
+        
 
     .hello-Container h1{
         bottom: -10%;
@@ -883,6 +894,40 @@ transition: 1s ease-in-out;
             height: 150px;
             font-size: 6vw;
         }
+
+        .project-overlay {
+            display: none;
+        }
+
+        .overlaySlideIn {
+            display: none;
+        }
+
+        .Project .LiveSite{
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(237, 181, 181, 0.3),rgba(234, 166, 166, 0.3));
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            transform: scale(0,1);
+            transform-origin: left;
+            transition: 0.5s ease-in;
+        }
+        
+        
+        .Project:hover > .LiveSite {
+            transform: scale(1,1);
+            }
+
+            .LiveSite img{
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+            }
 
 }
 
