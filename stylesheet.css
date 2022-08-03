@@ -264,7 +264,7 @@ nav {
     border-right: 4px solid #000000;
     overflow: hidden;
     animation: animate 3s linear infinite;
-    animation-delay: 5s;
+    animation-delay: 6s;
     
 }
 
@@ -360,10 +360,11 @@ button:hover{
     width: 45%;
     height: 65%;
     background-image: url("assets/Untitled-design-3-p-1080.png");
-    background-size: 65%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: center center;
     animation: glitch 1.3s infinite;
+    animation-delay: 3s;
     margin: 0px 10px;
 }
 

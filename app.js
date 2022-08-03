@@ -32,8 +32,6 @@ function hideOverlay(){
 //    return
 // }
 
-
-
 setTimeout(() => {
     hideOverlay()
 }, 6600);
