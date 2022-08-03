@@ -207,7 +207,7 @@ setInterval(() => {
 
 setTimeout(() => {
     hideOverlay()
-}, 5500);
+}, 6500);
 
 // scroll animations
 window.addEventListener("scroll", reveal);

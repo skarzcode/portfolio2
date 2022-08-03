@@ -41,7 +41,7 @@ body{
     align-items: flex-end;
     transform: scale(1, 1);
     transform-origin: left;
-    animation:  slide1 2s ease-in-out;
+    animation:  slide1 4s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 4s;
 }
@@ -68,7 +68,7 @@ body{
     align-items:flex-start;
     transform: scale(1, 1);
     transform-origin: right;
-    animation:  slide1 2s ease-in-out;
+    animation:  slide1 4s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 4s;
 }
@@ -91,7 +91,7 @@ position: absolute;
 bottom: -20%;
 transform: rotate(30deg);
 transform-origin: bottom left;
-animation: rotate1 2s ease-in-out;
+animation: rotate1 3s ease-in-out;
 animation-fill-mode: forwards;
 }
 
