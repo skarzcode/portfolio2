@@ -36,7 +36,6 @@ function glitch(){
     for(let i=0; i<images.length; i++){
         setTimeout(function timer() {
             personalImg.src = images[i];
-            console.log("hello world");
           }, i * 150);
         }
     }
