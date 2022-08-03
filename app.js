@@ -123,9 +123,7 @@ const ProjInfoText = [{
     LP: "https://skarzcode.github.io/TOP-Tic-Tac-Toe/",
     SC: "https://github.com/skarzcode/TOP-Tic-Tac-Toe"
 },
-
 ];
-
 function renderElement (i){
     projName.innerHTML = ProjInfoText[i].h1;
     ProjAbout.innerHTML = ProjInfoText[i].about;
@@ -164,7 +162,6 @@ function renderElement (i){
     sourceCode.href = ProjInfoText[i].SC;
     return;
 }
-
 projects.forEach((proj) => {
     proj.addEventListener("click", function(){
         if(overlay2){
@@ -186,7 +183,6 @@ projects.forEach((proj) => {
     }
     })
 })
-
 closeBtn.addEventListener("click", function(){
     overlay2.classList.remove("overlaySlideIn");
     ProjectInfo.classList.remove("projOpacity"); 
@@ -198,24 +194,12 @@ closeBtn.addEventListener("click", function(){
         
     // }, 2000);
 });
-
 box.forEach((popup) => {
     popup.addEventListener("click", () => {
         popup.classList.toggle("active");
     })
 })
 
-function hideOverlay(){
-    overlay.classList.add("displayNone");
-};
-
-async function glitch (){
-   for(let i=0; i<images.length;i++){
-    personalImg.src = images[i];
-    await timer(100);
-   };
-   return
-}
 
 // glitch();
 

@@ -456,9 +456,11 @@ button:hover{
 
 .ClipContainer .box.box1{
     clip-path: polygon(30% 0, 0 0, 0 100%, 45% 100%);
+    background-image: url("assets/coding.jpg");
 }
 .ClipContainer .box.box2{
     clip-path: polygon(70% 0, 30% 0, 45% 100%, 55% 100%);
+    background-image: url("assets/basketball.jpg");
     }
     .ClipContainer .box.box3{
         clip-path: polygon(100% 0, 70% 0, 55% 100%, 100% 100%);
