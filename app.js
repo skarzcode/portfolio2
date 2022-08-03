@@ -32,16 +32,7 @@ function hideOverlay(){
 //    return
 // }
 
-function glitch(){
-    for(let i=0; i<images.length; i++){
-        setTimeout(function timer() {
-            personalImg.src = images[i];
-          }, i * 150);
-        }
-    }
-setInterval(() => {
-    glitch();
-}, 1500);
+
 
 setTimeout(() => {
     hideOverlay()
