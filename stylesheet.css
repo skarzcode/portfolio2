@@ -21,7 +21,7 @@ body{
     height: 100vh;
     background-color: transparent;
     z-index: 1;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -710,8 +710,9 @@ transition: 1s ease-in-out;
 }
 
 .proj-content h1, h4,p{
-    margin: 10px;
+    margin: 5px;
     line-height: 25px;
+    font-size: 12px;
 }
 
 
@@ -757,6 +758,10 @@ transition: 1s ease-in-out;
 }
 
 .LiveSite{
+    display: none;
+}
+
+.LiveSite img{
     display: none;
 }
 
@@ -809,37 +814,6 @@ transition: 1s ease-in-out;
     .hero-Container img {
         object-fit: cover;
     } */
-
-    .Project-info{
-        width: 70%;
-        height: auto;
-        flex-direction: column;
-        }
-
-        .proj-content {
-            width: 100%;
-            height:50%;
-        }
-
-        .proj-half {
-            width: 100%;
-            height: 600px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .proj-content h1, h4,p{
-            margin: 5px;
-            line-height: 25px;
-        }
-
-        .proj-half img {
-            margin: 10px auto;
-            width: 90%;
-        }
-
         .live-site {
             width: 80%;
             height: 50px;
@@ -851,31 +825,7 @@ transition: 1s ease-in-out;
             height: 36px;
         }
 
-        .img-nav {
-            width: 60%;
-            height: 20px;
-            background-color: white;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 10px auto;
-        }
-
-        .nav-circle {
-            width: 16px;
-            height: 16px;
-        }
-        .project-overlay .close {
-            position: absolute;
-            top: 2%;
-            right: 5%;
-            width: 30px;
-            height: 30px;
-            background-color: red;
-        }
-
-        
-
+    
     .hello-Container h1{
         bottom: -10%;
         }
@@ -895,13 +845,6 @@ transition: 1s ease-in-out;
             font-size: 6vw;
         }
 
-        .project-overlay {
-            display: none;
-        }
-
-        .overlaySlideIn {
-            display: none;
-        }
 
         .Project .LiveSite{
             width: 100%;
@@ -924,9 +867,18 @@ transition: 1s ease-in-out;
             }
 
             .LiveSite img{
+                display: block;
                 width: 100px;
                 height: 100px;
                 object-fit: contain;
+            }
+
+            .project-overlay {
+                display: none;
+            }
+    
+            .overlaySlideIn {
+                display: none;
             }
 
 }
@@ -1100,29 +1052,6 @@ transition: 1s ease-in-out;
     .ClipContainer .box {
         position: absolute;
         width: 90%;
-    }
-
-    .proj-half {
-        width: 100%;
-        height: 600px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .project-overlay .close {
-        position: absolute;
-        top: 0%;
-        right: 10;
-        width: 30px;
-        height: 30px;
-        background-color: red;
-    }
-
-    .proj-content p {
-        font-size: 12px;
-       
     }
     
 }
