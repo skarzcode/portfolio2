@@ -24,13 +24,22 @@ function hideOverlay(){
     overlay.classList.add("displayNone");
 };
 
-async function glitch (){
-   for(let i=0; i<images.length;i++){
-    personalImg.src = images[i];
-    await timer(100);
-   };
-   return
-}
+// async function glitch (){
+//    for(let i=0; i<images.length;i++){
+//     personalImg.src = images[i];
+//     await timer(100);
+//    };
+//    return
+// }
+
+function glitch(){
+    for(let i=0; i<images.length; i++){
+        setTimeout(function timer() {
+            personalImg.src = images[i];
+            console.log("hello world");
+          }, i * 150);
+        }
+    }
 setInterval(() => {
     glitch();
 }, 1500);
