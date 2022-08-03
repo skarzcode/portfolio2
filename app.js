@@ -22,8 +22,8 @@ const livePreview = document.querySelector(".live-Preview")
 const sourceCode = document.querySelector(".Source-Code");
 const ProjInfoText = [{
     h1: "RPJ Property",
-    about: "A Multifunctional Property Development website for a Real client in its early development stages. Utilizing HTML/CSS and Javascript to create a dynamic site consisting of a Background Video for a Hero section, a Featured Property Page, a blog page, and much more. All While maintaining a simple, yet clean structure and design",
-    struggles: "As the Project had multiple pieces of content and data which i struggled to display them all in a nice and elegent way withoug cluttering the page with to much content. I overcame these issues by storing all the content in objects which would be called using an eventlistener and targeting the div's Id for specificity and then rendering the content using Javascript", 
+    about: "A Multifunctional Property Development website, Utilizing HTML/CSS and Javascript to create a dynamic site with a Background Video for a Hero section, a Property Page, blog page, and more, While maintaining a simple, yet clean structure and design",
+    struggles: "As the Project had multiple pieces of content i struggled to display them all in a nice clean way without cluttering the page to much. I overcame these issues by storing all the content in objects which would be called using an eventlistener and targeting the div's Id for specificity and then rendering the content", 
     li1: "Responsive Design",
     li2: "FLEXBOX/CSS GRID DESGIN",
     li3: "DOM Manipulation",
