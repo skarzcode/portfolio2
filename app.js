@@ -20,6 +20,24 @@ const ProjImage = document.querySelector(".Proj-images");
 const nav = document.querySelectorAll(".nav-circle");
 const livePreview = document.querySelector(".live-Preview")
 const sourceCode = document.querySelector(".Source-Code");
+function hideOverlay(){
+    overlay.classList.add("displayNone");
+};
+
+async function glitch (){
+   for(let i=0; i<images.length;i++){
+    personalImg.src = images[i];
+    await timer(100);
+   };
+   return
+}
+setInterval(() => {
+    glitch();
+}, 1500);
+
+setTimeout(() => {
+    hideOverlay()
+}, 6600);
 const ProjInfoText = [{
     h1: "RPJ Property",
     about: "A Multifunctional Property Development website, Utilizing HTML/CSS and Javascript to create a dynamic site with a Background Video for a Hero section, a Property Page, blog page, and more, While maintaining a simple, yet clean structure and design",
@@ -201,13 +219,7 @@ async function glitch (){
 
 // glitch();
 
-setInterval(() => {
-    glitch();
-}, 2000);
 
-setTimeout(() => {
-    hideOverlay()
-}, 6500);
 
 // scroll animations
 window.addEventListener("scroll", reveal);
