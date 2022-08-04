@@ -838,6 +838,24 @@ transition: 1s ease-in-out;
         height: auto;
         }
 
+        .cta-btn{
+            width: 250px;
+            height: auto;     
+            font-size: 18px;   
+        }
+
+        .hero-img{
+            width: 45%;
+            height: 65%;
+            background-image: url("assets/Untitled-design-3-p-1080.png");
+            background-size: 90%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            animation: glitch 1.3s infinite;
+            animation-delay: 3s;
+            margin: 0px 10px;
+        }
+
     
 }
 
@@ -916,6 +934,8 @@ transition: 1s ease-in-out;
             .overlaySlideIn {
                 display: none;
             }
+
+            
 
 }
 
