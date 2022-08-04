@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     position: relative;
     font-family: 'Poppins', sans-serif;
@@ -160,7 +164,7 @@ animation-fill-mode: forwards;
 header {
     width: 100%;
     z-index: 1;
-    height: 70px;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,8 +182,8 @@ nav {
 }
 
 .logo-link{
-    width:60px;
-    height: 60px;
+    width:5vw;
+    height:5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,6 +208,7 @@ nav {
     font-size: 18px;
     color: #FF3F2F;
     transition: 0.3s ease-in-out;
+    font-size: 1.5vw;
 }
 
 
@@ -224,6 +229,8 @@ nav {
     height: 95vh;
     overflow: hidden;
     background-image: url(assets/17973908-p-2600.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     object-fit: cover;
     background-position: bottom bottom;
     display: flex;
@@ -269,13 +276,14 @@ nav {
 }
 
 .cta-btn{
-    width: 250px;
+    width: 16vw;
+    height: 6vh;
     border-radius: 0px;
     border: 1px solid #553264;
     background: black;
     border-radius: 5px;
     padding: 10px 0px;
-    font-size: 20px;
+   font-size: 1.5vw;
     font-family: 'Ubuntu', sans-serif;
     font-weight: lighter;
     cursor: pointer;
@@ -527,6 +535,7 @@ z-index: 1000;
 
 .wrapper{
     width: 80%;
+    max-width: 2000px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -635,8 +644,8 @@ background: linear-gradient(rgba(0, 0, 0, 1),rgba(12, 12, 12, 1));
 
 .project-overlay .close{
     position: absolute;
-    top: 5%;
-    right: 10%;
+    top: 2%;
+    right: 1%;
     width: 32px;
     height: 32px;
     border: solid whitesmoke 2px;
@@ -758,6 +767,7 @@ transition: 1s ease-in-out;
 
 .projectContainer{
     width: 100%;
+    max-width: 2000px;
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -977,6 +987,22 @@ transition: 1s ease-in-out;
 
 .nav-toggle:checked~nav a {
     opacity: 1;
+    font-size: 18px;
+}
+
+.cta-btn{
+    width: 250px;
+    height: auto;
+    font-size: 20px;
+    
+}
+
+.logo-link{
+    width:60px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ClipContainer {
