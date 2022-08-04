@@ -1114,6 +1114,7 @@ transition: 1s ease-in-out;
         width: 100%;
         max-width: 1500px;
         height: 350px;
+        display: none;
         /* background-color: red; */
     }
 
