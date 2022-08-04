@@ -38,7 +38,7 @@ setTimeout(() => {
 const ProjInfoText = [{
     h1: "RPJ Property",
     about: "A Multifunctional Property Development website, Utilizing HTML/CSS and Javascript to create a dynamic site with a Background Video for a Hero section, a Property Page, blog page, and more, While maintaining a simple, yet clean structure and design",
-    struggles: "As the Project had multiple pieces of content i struggled to display them all in a nice clean way without cluttering the page to much. I overcame these issues by storing all the content in objects which would be called using an eventlistener and targeting the div's Id for specificity and then rendering the content", 
+    struggles: "As the Project had multiple pieces of content I struggled to display them all in a nice clean way without cluttering the page too much. I overcame these issues by storing all the content in objects which would be called using an event listener and targeting the div's Id for specificity and then rendering the content", 
     li1: "Responsive Design",
     li2: "FLEXBOX/CSS GRID DESGIN",
     li3: "DOM Manipulation",
@@ -51,8 +51,8 @@ const ProjInfoText = [{
 
 },{
     h1: "Personal Project",
-    about: "A beautiful and simple single page site with a modern and elegant design enabling me with a convenient way to publish and showcase a self managed portfolio of Projects, design ideas and creative thinking made with HTML/CSS and JavaScript",
-    struggles: "The Overlay animation at the start contains texts which rotate into display. Initially i was unable to make it work as it rotated the whole text and not from a pivot. I overcame this issue by reading up documentation and going on stackoverflow to learn about a css property called transform-origin which enabsled my animtion to work", 
+    about: "A beautiful and simple single page site with a modern and elegant design enabling me with a convenient way to publish and showcase a self-managed portfolio of Projects, design ideas and creative thinking made with HTML/CSS and JavaScript",
+    struggles: "The Overlay animation at the start contains texts which rotate into the display. Initially, I was unable to make it work as it rotated the whole text and not from a pivot. I overcame this issue by reading up documentation and going on StackOverflow to learn about a CSS property called transform-origin which enabled my animation to work",
     li1: "Overlay Animation",
     li2: "Clip Path Videos",
     li3: "DOM Manipulation",
@@ -65,8 +65,8 @@ const ProjInfoText = [{
 },
 {
     h1: "Photographhy Portfolio",
-    about: "Jessica's Photography portfolio is a unique, fully responsive Website that's perfect for a photographer Utilizing HTML/CSS and Javascript. This Website comes with a stunning hero section as well as a masonry grid and service section. Besides the simple, yet classy design, this site comes with a bunch of custom animations and interactions that makes browsing the website pleasant and engaging.",
-    struggles: "This Project has a unique navigation which i planned to make and implement using css. However, due to the animations complexitiy i had to utilise Javascript to add and remove classes with the desired effec that I wanted", 
+    about: "Jessica's Photography portfolio is a unique, fully responsive Website that's perfect for a photographer Utilizing HTML/CSS and Javascript. This Website comes with a stunning hero section as well as a masonry grid and service section. Besides the simple, yet classy design, this site comes with a bunch of custom animations and interactions that make browsing the website pleasant and engaging.",
+    struggles: "This Project has unique navigation which I planned to make and implement using CSS. However, due to the animation complexity, I had to utilise Javascript to add and remove classes with the desired effects that I wanted.", 
     li1: "Responsive Navigation",
     li2: "Flexbox/Grid Design",
     li3: "Forms",
@@ -79,8 +79,8 @@ const ProjInfoText = [{
 },{
 
     h1: "Quote Generator",
-    about: "Utilizing HTML/CSS and JavaScript as well as a Quote Generating API i created a Responsive Quote Generator with a tweet Functionality all while maintaining a simple and elegant design",
-    struggles: "Due to the quotes being generated were random, at times the text would overflow the div. To overcome this i had to check the number of word and if it exceeded an set amount i would change the font of the text to accomoate fort he div", 
+    about: "Utilizing HTML/CSS and JavaScript as well as a Quote Generating API i created a Responsive Quote Generator with a tweet Functionality all while maintaining a simple and elegant design.",
+    struggles: "Due to the quotes being generated being random, at times the text would overflow the div. To overcome this I had to use an if statement to check the number of words and if it exceeded a set amount I would change the font of the text to accommodate for the div.", 
     li1: "Quote Generating API",
     li2: "Social Sharing Function",
     li3: "SVG Background",
@@ -94,8 +94,8 @@ const ProjInfoText = [{
 {
 
     h1: "Calculator",
-    about: " An on-screen calculator using JavaScript, HTML, and CSS. With Built in functions to evaluate expressions while maintaining a simple clean design",
-    struggles: "A basic Calculator lets you chain on multiple different operations to the returned value. I struggled on this because when i would try it. NAN would be returned in my calc screen. This occured because my operator function would run even if the currVal or previousVal was empty so I made a boolean to check if both values are populated and to then run an operator function on them", 
+    about: "An on-screen calculator using JavaScript, HTML, and CSS. With Built-in functions to evaluate expressions while maintaining a simple clean design.",
+    struggles: "A basic Calculator lets you chain on multiple different operations to the returned value. I struggled with this because when I would try it. NAN would be returned in my calc screen. This occurred because my operator function would run even if the currVal or previousVal was empty so I made a boolean to check if both values are populated and to then run an operator function on them.", 
     li1: "DOM Manipulation",
     li2: "Interactions",
     li3: "Responsive Design",
@@ -108,8 +108,8 @@ const ProjInfoText = [{
 },
 {
     h1: "Tic Tac Toe",
-    about: " Utilising Object Oriented Programming I created a game of Tic Tac Toe that can be played in the browser against another Player or even against and AI", 
-    struggles: "Whenever the AI was one move away from winning. The AI didnt populated the board with the final O to get three in a row and would just got to the celebration screen making it seem as if it didnt place the move. I overcame this issue by setting a SetTimeOut after the move had been printed to the Dom and then ran the function to check if anyone had won.", 
+    about: "Utilising Object Oriented Programming I created a game of Tic Tac Toe that can be played in the browser against another Player or even against an AI.", 
+    struggles: "Whenever the AI was one move away from winning. The AI didn't populate the board with the final O to get three in a row and would just display the celebration screen making it seem as if it didn't place the move. I overcame this issue by setting a SetTimeOut after the move had been printed to the Dom and then ran the function to check if anyone had won.", 
     li1: "AI Mode",
     li2: "PVP Mode",
     li3: "Factory Function/OOP",
