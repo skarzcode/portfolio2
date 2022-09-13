@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 *{
     margin: 0;
@@ -8,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    
   }
 
 body{
@@ -24,7 +26,7 @@ body{
     right: 0;
     height: 100vh;
     background-color: transparent;
-    z-index: 1;
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -806,12 +808,103 @@ transition: 1s ease-in-out;
     transform: scale(1.1);
 } */
 
+.ProjectSlider{
+    width: 100%;
+    height: 100vh;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.projSliderContainer{
+    width: 70%;
+    height: 85%;
+    
+}
+
+.s1{
+    background: url(assets/preview.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #F0F0F0;
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+}
 
 
+.s2{
+    background: url(assets/preview2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #F0F0F0;
+    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    border-radius: 20px;
+}
 
+.s3{
+background-color: pink;
+}
 
+.sliderH1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 3vw;
+    color: black;
+    text-shadow: -1px 0 lightblue, 0 1px lightblue, 1px 0 lightblue, 0 -1px lightblue;
+    font-family: 'Titillium Web', sans-serif;
+}
 
-@media only screen and (min-width: 2000px){
+.projNav{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projButtons{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.LivePreviewBtn, .SourceCodeBtn{
+    background-color: lightblue;
+    padding: 1vw 1.3vw;
+    border: solid lightblue 1px;
+    border-radius: 70px;
+    font-size: 1.3vw;
+    transition: 500ms ease-in-out;
+}
+
+.LivePreviewBtn:hover{
+    background-color: #F8F8F6;
+    border: solid black 1px;
+}
+
+.SourceCodeBtn:hover{
+    background-color: #F8F8F6;
+    border: solid black 1px;
+}
+
+@media only screen and (min-width: 1700px){
     .hello-Container{
         width: 70%;
         height: 250px;
@@ -823,6 +916,34 @@ transition: 1s ease-in-out;
         font-size: 5vw;
     }
 }
+
+@media only screen and (min-width: 2200px){
+    .hello-Container{
+        width: 70%;
+        height: 350px;
+        font-size: 5vw;
+    }
+    .welcome-Container{
+        width: 70%;
+        height: 350px;
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 2500px){
+    .hello-Container{
+        width: 70%;
+        height: 50%;
+        font-size: 5vw;
+    }
+    .welcome-Container{
+        width: 70%;
+        height: 50%;
+        font-size: 5vw;
+    }
+}
+
+
 
 
 @media only screen and (max-width: 1200px){
@@ -846,7 +967,7 @@ transition: 1s ease-in-out;
 
         .hero-img{
             width: 45%;
-            height: 65%;
+            height: 72%;
             background-image: url("assets/Untitled-design-3-p-1080.png");
             background-size: 90%;
             background-repeat: no-repeat;
@@ -934,9 +1055,23 @@ transition: 1s ease-in-out;
             .overlaySlideIn {
                 display: none;
             }
+}
 
-            
+@media only screen and (max-width: 800px){
+.projSliderContainer{
+    width: 70%;
+    height: 70%;
+    
+}
 
+.LivePreviewBtn, .SourceCodeBtn {
+    background-color: lightblue;
+    padding: 1vw 1.3vw;
+    border: solid lightblue 1px;
+    border-radius: 70px;
+    font-size: 1.6vw;
+    transition: 500ms ease-in-out;
+}
 }
 
 
@@ -1086,6 +1221,25 @@ transition: 1s ease-in-out;
         text-transform: uppercase;
         margin: 15px 0px;
     }
+
+    .projSliderContainer {
+        width: 70%;
+        height: 65%;
+    }
+
+    .LivePreviewBtn, .SourceCodeBtn {
+        background-color: lightblue;
+        padding: 1vw 1.3vw;
+        border: solid lightblue 1px;
+        border-radius: 70px;
+        font-size: 2vw;
+        transition: 500ms ease-in-out;
+    }
+
+    .sliderH1 {
+        font-size: 3.5vw;
+        
+    }
 }
 
 @media only screen and (max-width: 530px){
@@ -1126,11 +1280,42 @@ transition: 1s ease-in-out;
         position: absolute;
         width: 90%;
     }
+
+    .projSliderContainer {
+        width: 70%;
+        height: 60%;
+    }
+
+    .LivePreviewBtn, .SourceCodeBtn {
+        background-color: lightblue;
+        padding: 1vw 1.3vw;
+        border: solid lightblue 1px;
+        border-radius: 70px;
+        font-size: 2.6vw;
+        transition: 500ms ease-in-out;
+    }
     
 }
 
-@media only screen and (max-width: 400px){
- 
+@media only screen and (max-width: 470px){
+    .projSliderContainer {
+        width: 80%;
+        height: 50%;
+    }
+
+    .LivePreviewBtn, .SourceCodeBtn {
+        background-color: lightblue;
+        padding: 1vw 1.3vw;
+        border: solid lightblue 1px;
+        border-radius: 70px;
+        font-size: 3vw;
+        transition: 500ms ease-in-out;
+    }
+
+    .sliderH1 {
+        font-size: 3.7vw;
+        
+    }
 }
 /* scroll animation */
 

@@ -24,6 +24,9 @@ function hideOverlay(){
     overlay.classList.add("displayNone");
 };
 
+
+
+
 // async function glitch (){
 //    for(let i=0; i<images.length;i++){
 //     personalImg.src = images[i];
