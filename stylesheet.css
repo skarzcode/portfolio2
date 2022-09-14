@@ -238,6 +238,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border: none;
 }
 
 .hero-text{
@@ -811,7 +812,7 @@ transition: 1s ease-in-out;
 .ProjectSlider{
     width: 100%;
     height: 100vh;
-    background-color: teal;
+    background-color: #171819;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -889,7 +890,7 @@ background-color: pink;
     background-color: lightblue;
     padding: 1vw 1.3vw;
     border: solid lightblue 1px;
-    border-radius: 70px;
+    border-radius: 10px;
     font-size: 1.3vw;
     transition: 500ms ease-in-out;
 }

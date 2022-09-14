@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+  }
+
+body{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F8F6;
+    position: relative;
+}
+
+.outerContainer{
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar{
+    position:fixed;
+    top: 60%;
+    left: 0%;
+    transform: translate(-0%,-60%);
+    width: 5%;
+    height: 50%;
+    background-color: #171819;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+    z-index: 100;
+}
+
+.navBar p{
+    font-size: 0.8vw;
+}
+
+
+.ProjContainer{
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+}
+
+
+.projSliderContainer{
+   width: 40%;
+   height: 75%;
+   border-radius: 20px;
+}
+
+.s1{
+    background: url(assets/Screenshot\ \(42\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px;
+}
+
+.s2{
+        background: url(assets/Screenshot\ \(47\).png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 20px;
+}
+
+.s3{
+    background: url(assets/Screenshot\ \(48\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 20px;
+}
+
+.s4{
+    background: url(assets/Screenshot\ \(50\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 20px;  
+}
+
+.projIntro{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjDescription{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ProjContainer2 h1{
+    font-size: 3.3vw;
+}
+
+.ProjDescription h1{
+    font-size: 3vw;
+}
+
+.ProjDescription p{
+    font-size: 1vw;
+    line-height: 1.7vw;
+    text-align: center;
+}
+
+.projButtons {
+    width: 90%;
+    height: 20%;
+}
+
+.LivePreviewBtn, .SourceCodeBtn {
+    background-color: #171819;
+    padding: 0.5vw 1vw;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    font-size: 1vw;
+    transition: all 500ms ease-in-out 0s;
+    margin: 0px 20px;
+    color: whitesmoke;
+}
+
+.outerContainer2{
+    width: 100%;
+    height: auto;
+    min-height: 85vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjContainer2{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+}
+
+.overviewContainer{
+    width: 90%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px 0px;
+}
+
+.overviewUL{
+    width: 50%;
+    height:auto;
+    
+}
+
+.overviewUL li{
+    margin: 30px;
+    font-size: 1.1vw;
+    line-height: 2vw;
+    font-weight: bold;
+}
+
+.imgContainer{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgContainer h4{
+    font-size: 1.5vw;
+    color: red;
+    text-decoration: underline;
+}
+
+.Iphone{
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.outerContainer3{
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.outerContainer3 h1{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.ProjContainer3{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: none;
+}
+
+.projProcess{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.processDiv{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.processDiv h2,p{
+    margin: 5px 0px;
+}
+
+.processDiv p{
+    font-size: 1vw;
+    line-height: 1.7vw;
+}
+
+.processDiv h2{
+    font-size: 1.5vw;
+}
+
+.s1-2{
+    background: url(assets/IMG_0304.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px;
+}
+
+.s2-2{
+    background: url(assets/IMG_0307.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px;
+}
+
+.s3-2{
+    background: url(assets/IMG_0308.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px;
+}
+
+.outerContainer4{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    background-color: red;
+    margin: 50px auto;
+}
+
+.moreProjContainer{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1100px){
+    .outerContainer {
+        width: 100%;
+        height: 80vh;
+    }
+
+   
+
+    .ProjDescription p {
+        font-size: 1.3vw;
+        line-height: 1.9vw;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .outerContainer {
+        width: 100%;
+        min-height: 95vh;
+    }
+
+    .ProjContainer {
+        width: 90%;
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .projIntro {
+        width: 90%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .ProjDescription {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ProjDescription p {
+        font-size: 1.5vw;
+        line-height: 2.1vw;
+        text-align: center;
+    }
+
+    .projSliderContainer {
+        width: 80%;
+        height: 75%;
+        border-radius: 20px;
+        margin: 50px auto;
+    }
+
+    .navBar {
+        position: fixed;
+        top: 60%;
+        left: 0%;
+        transform: translate(-0%,-60%);
+        width: 8%;
+        height: 50%;
+    }
+
+    .navBar p {
+        font-size: 1vw;
+    }
+
+    .LivePreviewBtn, .SourceCodeBtn {
+        padding: 0.9vw 1vw;
+        font-size: 1.3vw;
+    }
+
+    .overviewUL {
+        width: 60%;
+        height: auto;
+    }
+
+    .overviewUL li {
+        margin: 30px;
+        font-size: 1.5vw;
+        line-height: 2vw;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .navBar {
+       display: none;
+    }
+
+    .projIntro {
+        width: 95%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .ProjDescription p {
+        font-size: 2.1vw;
+        line-height: 2.7vw;
+        text-align: center;
+    }
+
+    .LivePreviewBtn, .SourceCodeBtn {
+        padding: 1.2vw 1vw;
+        font-size: 1.5vw;
+    }
+
+    .overviewUL li {
+        margin: 25px;
+        font-size: 1.9vw;
+        line-height: 1.9vw;
+        font-weight: bold;
+    }
+
+    .imgContainer h4{
+        margin: 30px auto;
+        font-size: 1.6vw;
+    }
+
+.overviewUL {
+    width: 50%;
+    height: auto;
+}
+
+.imgContainer {
+    width: 50%;
+    height: 100%;
+}
+  
+}
+
+@media only screen and (max-width: 450px){
+
+    .ProjContainer2 {
+        width: 90%;
+        height: 100%;
+       margin: 30px auto;
+    }
+
+    .overviewContainer {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .overviewUL {
+        width: 100%;
+        height: auto;
+    }
+
+    .imgContainer {
+        width: 80%;
+        height: 100%;
+    }
+
+    .imgContainer h4 {
+        margin: 30px auto;
+        font-size: 2.2vw;
+    }
+
+    .ProjContainer3 {
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .projProcess {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .processDiv p {
+        font-size: 1.9vw;
+        line-height: 2.1vw;
+    }
+
+    .processDiv h2 {
+        font-size: 2.5vw;
+    }
+
+    .projSliderContainer {
+        width: 90%;
+        height: 75%;
+        border-radius: 20px;
+        margin: 20px auto;
+    }
+
+    
+        
+}

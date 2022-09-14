@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="assets\favicon.png" rel="shortcut icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="projstylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <title>Invoice Project</title>
+</head>
+<body>
+    <div class="navBar">
+        <p>Intro</p>
+        <p>Overview</p>
+        <p>Features</p>
+        <p>Process</p>
+    </div>
+    <header>
+        <a class="logo-link" href="index.html"><img src="assets\Logo_1Logo.png" class="logo" alt="Company logo"></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+
+    <section class="outerContainer">
+        <div class="ProjContainer">
+            <div class="projSliderContainer">
+
+                <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide s1"></div>
+          <div class="swiper-slide s2"></div>
+          <div class="swiper-slide s3"></div>
+          <div class="swiper-slide s4"></div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        
+      </div>
+    
+    
+    
+            </div>
+            <div class="projIntro">
+                <div class="ProjDescription">
+                    <h1>Invoice WebApplication</h1>
+                    <div class="projButtons">
+                        <button class="LivePreviewBtn">Live Preview</button>
+                        <button class="SourceCodeBtn">Source Code</button>
+                    </div>
+                    <p>This is a CRUD invoice inventory management system developed using Html/CSS and JavaScript. The Project is based on the concept of creating new invoices adding items which are used to dynamically calculate the total bill, update any given feild and delete any invoice. Talking about the project, i will outline important features which where added to the project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="outerContainer2">
+        <div class="ProjContainer2">
+          <h1>Overview</h1> 
+          <div class="overviewContainer">
+          <ul class="overviewUL">
+            <li>Create, read, update, and delete invoices</li>
+            <li>Filter invoices by status (draft/pending/paid)</li>
+            <li>Save draft invoices, and mark pending invoices as paid</li>
+            <li>Receive form validations when trying to create/edit an invoice</li>
+            <li>See hover states for all interactive elements on the page</li>
+            <li>View the optimal layout for the app depending on their device's screen size</li>
+            <li>Toggle light and dark mode</li>
+            <li>Store any changes in LocalStorage</li>
+          </ul>
+          <div class="imgContainer">
+            <h4>Watch a detailed video on my Tiktok</h4>
+            <img class="Iphone" src="assets\IMG_6291_iphone13blue_portrait.png" alt="Iphone Mockup">
+          </div>
+          
+        </div>
+        </div>
+    </section>
+
+    <section class="outerContainer3">
+        <h1>Process</h1>
+        <div class="ProjContainer3">
+            <div class="projProcess">
+                <div class="processDiv">
+                    <h2>Sketch</h2>
+                    <p>At the beginning of the project, first I outlined all the components of the app with a pen and pad to get an understanding of how i would structure and make each section giving me clarity on what tools will be needed to execute the project</p>
+                    <h2>Static Version</h2>
+                    <p>Once the design was done, i then began creating a static version of the app using HTML5 and CSS alongside dummy data to know how each section should look and function. This gave me the ability to write better psuedo code as i knew what elements would be dynamic and interactive.</p>
+                    <h2>Dynamic Version</h2>
+                    <p>Finally after creating my Psuedo code and design ideas i began implementing Javascript to use Fetch to render the JSON data as well as creating Factory functions to create dynamic objects utilising Dom Elements that would change state after events</p>
+                </div>
+            </div>
+            <div class="projSliderContainer">
+
+                <!-- Slider main container -->
+    <div class="swiper2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide s1-2"></div>
+          <div class="swiper-slide s2-2"></div>
+          <div class="swiper-slide s3-2"></div>
+
+        </div>
+      </div>
+    
+    
+    
+            </div>
+        </div>
+    </section>
+
+    <section class="outerContainer4">
+        <div class="moreProjContainer">
+            <div class="projSliderContainer">
+
+                <!-- Slider main container -->
+    <div class="swiper3">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide s1"></div>
+          <div class="swiper-slide s2"></div>
+          <div class="swiper-slide s3"></div>
+          <div class="swiper-slide s4"></div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    
+    
+    
+            </div> 
+        </div>
+
+    </section>
+    
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  effect: 'cube',
+  cubeEffect: {
+    slideShadows: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+
+  // And if we need scrollbar
+
+});
+
+const swiper2 = new Swiper('.swiper2', {
+  // Optional parameters
+  loop: true,
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+
+  autoplay: {
+   delay: 3000,
+ },
+
+  // If we need pagination
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '',
+    prevEl: '.swiper-button-prev',
+  }, 
+
+  
+
+  // And if we need scrollbar
+ 
+});
+
+const swiper3 = new Swiper('.swiper3', {
+  // Optional parameters
+  loop: true,
+
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 30,
+    slideShadows: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+  
+
+  // And if we need scrollbar
+ 
+});
+    </script>
+</body>
+</html>
