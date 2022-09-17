@@ -593,8 +593,7 @@ body{
 
 @media (max-width: 900px) and (orientation: landscape) {
     .outerContainer2 {
-      background-color: red;
-        min-height: 95vh;
+        min-height: 100vh;
       
     }
 }
