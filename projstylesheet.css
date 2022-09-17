@@ -343,7 +343,6 @@ body{
         width: 100%;
         min-height: 100vh;
         margin: 20px auto;
-        background-color: blue;
     }
 
     .outerContainer2 {
@@ -364,7 +363,6 @@ body{
         justify-content: center;
         align-items: center;
         margin-top: 30px;
-        background-color: yellow;
     }
 
     .projSliderContainer {
@@ -381,7 +379,6 @@ body{
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
-        background-color: red;
     }
 
     .ProjDescription p {
@@ -475,7 +472,7 @@ body{
 
     .ProjDescription p {
         font-size: 2.3vw;
-        line-height: 4.2vw;
+        line-height: 4vw;
         text-align: center;
     }
 
@@ -570,17 +567,15 @@ body{
    
 }
 
-@media (max-width: 800px) and (orientation: landscape) {
+@media (max-width: 900px) and (orientation: landscape) {
     .outerContainer {
         width: 100%;
         min-height: 175vh;
         margin: 20px auto;
-       background-color: brown;
     }
 
     .outerContainer3 {
         width: 100%;
-        height: 200vh;
-        background-color: brown;
+        height: 220vh;
     }
 }
