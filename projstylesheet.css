@@ -380,7 +380,7 @@ body{
 
     .ProjDescription p {
         font-size: 1.7vw;
-        line-height: 2.6vw;
+        line-height: 3.2vw;
         text-align: left;
     }
 
@@ -424,10 +424,11 @@ body{
 
     .projProcess {
         width: 100%;
-        height: auto;
+        height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: gray;
     }
 
 
