@@ -341,8 +341,13 @@ body{
 
     .outerContainer {
         width: 100%;
-        min-height: 95vh;
+        min-height: 120vh;
         margin: 20px auto;
+    }
+
+    .outerContainer2 {
+        width: 100%;
+        min-height: 120vh;
     }
 
     .ProjContainer {
@@ -358,7 +363,6 @@ body{
         justify-content: center;
         align-items: center;
         margin-top: 30px;
-        background-color: red;
     }
 
     .projSliderContainer {
@@ -366,7 +370,6 @@ body{
         height: 50%;
         border-radius: 20px;
         margin: 20px auto;
-       background-color: yellow;
     }
 
     .ProjDescription {
@@ -428,7 +431,6 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: gray;
     }
 
 
@@ -445,7 +447,7 @@ body{
 
     .outerContainer3 {
         width: 100%;
-        min-height:135vh;
+        height: 150vh;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -469,8 +471,8 @@ body{
     }
 
     .ProjDescription p {
-        font-size: 2.1vw;
-        line-height: 2.7vw;
+        font-size: 2.3vw;
+        line-height: 4.2vw;
         text-align: center;
     }
 
@@ -558,10 +560,11 @@ body{
 
     .projSliderContainer {
         width: 90%;
-        height: 75%;
         border-radius: 20px;
         margin: 20px auto;
     }
+
+    
 
     
         
