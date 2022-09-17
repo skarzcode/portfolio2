@@ -353,20 +353,20 @@ body{
 
     .projIntro {
         width: 100%;
-        height: 60%;
+        height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 30px;
-        background-color: yellow;
+        background-color: red;
     }
 
     .projSliderContainer {
         width: 100%;
-        height: 40%;
+        height: 50%;
         border-radius: 20px;
         margin: 20px auto;
-        background-color: red;
+       background-color: yellow;
     }
 
     .ProjDescription {
@@ -384,12 +384,7 @@ body{
         text-align: left;
     }
 
-    .projSliderContainer {
-        width: 80%;
-        height: 75%;
-        border-radius: 20px;
-        margin: 50px auto;
-    }
+   
 
     .navBar {
         position: fixed;
