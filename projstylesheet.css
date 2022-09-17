@@ -341,8 +341,9 @@ body{
 
     .outerContainer {
         width: 100%;
-        min-height: 120vh;
+        min-height: 100vh;
         margin: 20px auto;
+        background-color: blue;
     }
 
     .outerContainer2 {
@@ -363,6 +364,7 @@ body{
         justify-content: center;
         align-items: center;
         margin-top: 30px;
+        background-color: yellow;
     }
 
     .projSliderContainer {
@@ -379,6 +381,7 @@ body{
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        background-color: red;
     }
 
     .ProjDescription p {
@@ -447,7 +450,7 @@ body{
 
     .outerContainer3 {
         width: 100%;
-        height: 150vh;
+        height: 100vh;
         overflow: hidden;
         display: flex;
         justify-content: center;
