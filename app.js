@@ -3,23 +3,23 @@ const images = ["assets/Untitled-design-3-p-1080.png", "assets/glitch-image-1659
 const timer = ms => new Promise(res => setTimeout(res, ms));
 const overlay = document.querySelector(".overlay");
 let box = document.querySelectorAll(".box");
-const overlay2 = document.querySelector(".project-overlay");
-const projects = document.querySelectorAll(".Project");
-const closeBtn = document.querySelector(".close");
-const ProjectInfo = document.querySelector(".Project-info");
-const projName = document.querySelector(".Proj-Name");
-const ProjAbout = document.querySelector(".Proj-About");
-const projStruggle = document.querySelector(".Proj-Struggle");
-const list1 = document.querySelector(".Li1");
-const list2 = document.querySelector(".Li2");
-const list3 = document.querySelector(".Li3");
-const list4 = document.querySelector(".Li4");
-const list5 = document.querySelector(".Li5");
-const list6 = document.querySelector(".Li6");
-const ProjImage = document.querySelector(".Proj-images");
-const nav = document.querySelectorAll(".nav-circle");
-const livePreview = document.querySelector(".live-Preview")
-const sourceCode = document.querySelector(".Source-Code");
+// const overlay2 = document.querySelector(".project-overlay");
+// const projects = document.querySelectorAll(".Project");
+// const closeBtn = document.querySelector(".close");
+// const ProjectInfo = document.querySelector(".Project-info");
+// const projName = document.querySelector(".Proj-Name");
+// const ProjAbout = document.querySelector(".Proj-About");
+// const projStruggle = document.querySelector(".Proj-Struggle");
+// const list1 = document.querySelector(".Li1");
+// const list2 = document.querySelector(".Li2");
+// const list3 = document.querySelector(".Li3");
+// const list4 = document.querySelector(".Li4");
+// const list5 = document.querySelector(".Li5");
+// const list6 = document.querySelector(".Li6");
+// const ProjImage = document.querySelector(".Proj-images");
+// const nav = document.querySelectorAll(".nav-circle");
+// const livePreview = document.querySelector(".live-Preview")
+// const sourceCode = document.querySelector(".Source-Code");
 function hideOverlay(){
     overlay.classList.add("displayNone");
 };
@@ -38,167 +38,167 @@ function hideOverlay(){
 setTimeout(() => {
     hideOverlay()
 }, 6600);
-const ProjInfoText = [{
-    h1: "RPJ Property",
-    about: "A Multifunctional Property Development website, Utilizing HTML/CSS and Javascript to create a dynamic site with a Background Video for a Hero section, a Property Page, blog page, and more, While maintaining a simple, yet clean structure and design",
-    struggles: "As the Project had multiple pieces of content I struggled to display them all in a nice clean way without cluttering the page too much. I overcame these issues by storing all the content in objects which would be called using an event listener and targeting the div's Id for specificity and then rendering the content", 
-    li1: "Responsive Design",
-    li2: "FLEXBOX/CSS GRID DESGIN",
-    li3: "DOM Manipulation",
-    li4: "Background Video",
-    li5: "Slideshow / Carousel",
-    li6: "CSS & JAVASCRIPT Animations",
-    src: ["assets/Screenshot (20).png","assets/Screenshot (25).png","assets/Screenshot (28).png"],
-    LP: "https://skarzcode.github.io/RPJ-Test/",
-    SC: "https://github.com/skarzcode/RPJ-Test",
+// const ProjInfoText = [{
+//     h1: "RPJ Property",
+//     about: "A Multifunctional Property Development website, Utilizing HTML/CSS and Javascript to create a dynamic site with a Background Video for a Hero section, a Property Page, blog page, and more, While maintaining a simple, yet clean structure and design",
+//     struggles: "As the Project had multiple pieces of content I struggled to display them all in a nice clean way without cluttering the page too much. I overcame these issues by storing all the content in objects which would be called using an event listener and targeting the div's Id for specificity and then rendering the content", 
+//     li1: "Responsive Design",
+//     li2: "FLEXBOX/CSS GRID DESGIN",
+//     li3: "DOM Manipulation",
+//     li4: "Background Video",
+//     li5: "Slideshow / Carousel",
+//     li6: "CSS & JAVASCRIPT Animations",
+//     src: ["assets/Screenshot (20).png","assets/Screenshot (25).png","assets/Screenshot (28).png"],
+//     LP: "https://skarzcode.github.io/RPJ-Test/",
+//     SC: "https://github.com/skarzcode/RPJ-Test",
 
-},{
-    h1: "Personal Project",
-    about: "A beautiful and simple single page site with a modern and elegant design enabling me with a convenient way to publish and showcase a self-managed portfolio of Projects, design ideas and creative thinking made with HTML/CSS and JavaScript",
-    struggles: "The Overlay animation at the start contains texts which rotate into the display. Initially, I was unable to make it work as it rotated the whole text and not from a pivot. I overcame this issue by reading up documentation and going on StackOverflow to learn about a CSS property called transform-origin which enabled my animation to work",
-    li1: "Overlay Animation",
-    li2: "Clip Path Videos",
-    li3: "DOM Manipulation",
-    li4: "Animated Texts",
-    li5: "Interactivity",
-    li6: "CSS & JAVASCRIPT Animations",  
-    src: ["assets/Screenshot (8).png", "assets/Screenshot (23).png", "assets/Screenshot (24).png" ],
-    LP: "https://skarzcode.github.io/portfolio2/",
-    SC: "https://github.com/skarzcode/portfolio2"
-},
-{
-    h1: "Photographhy Portfolio",
-    about: "Jessica's Photography portfolio is a unique, fully responsive Website that's perfect for a photographer Utilizing HTML/CSS and Javascript. This Website comes with a stunning hero section as well as a masonry grid and service section. Besides the simple, yet classy design, this site comes with a bunch of custom animations and interactions that make browsing the website pleasant and engaging.",
-    struggles: "This Project has unique navigation which I planned to make and implement using CSS. However, due to the animation complexity, I had to utilise Javascript to add and remove classes with the desired effects that I wanted.", 
-    li1: "Responsive Navigation",
-    li2: "Flexbox/Grid Design",
-    li3: "Forms",
-    li4: "Dynamic Reviews",
-    li5: "Interactivity",
-    li6: "CSS & JAVASCRIPT Animations",  
-    src: ["assets/Screenshot (13).png", "assets/Screenshot (30).png", "assets/Screenshot (29).png"],
-    LP: "https://skarzcode.github.io/Dynamic-Nav-Template/",
-    SC: "https://github.com/skarzcode/Dynamic-Nav-Template"
-},{
+// },{
+//     h1: "Personal Project",
+//     about: "A beautiful and simple single page site with a modern and elegant design enabling me with a convenient way to publish and showcase a self-managed portfolio of Projects, design ideas and creative thinking made with HTML/CSS and JavaScript",
+//     struggles: "The Overlay animation at the start contains texts which rotate into the display. Initially, I was unable to make it work as it rotated the whole text and not from a pivot. I overcame this issue by reading up documentation and going on StackOverflow to learn about a CSS property called transform-origin which enabled my animation to work",
+//     li1: "Overlay Animation",
+//     li2: "Clip Path Videos",
+//     li3: "DOM Manipulation",
+//     li4: "Animated Texts",
+//     li5: "Interactivity",
+//     li6: "CSS & JAVASCRIPT Animations",  
+//     src: ["assets/Screenshot (8).png", "assets/Screenshot (23).png", "assets/Screenshot (24).png" ],
+//     LP: "https://skarzcode.github.io/portfolio2/",
+//     SC: "https://github.com/skarzcode/portfolio2"
+// },
+// {
+//     h1: "Photographhy Portfolio",
+//     about: "Jessica's Photography portfolio is a unique, fully responsive Website that's perfect for a photographer Utilizing HTML/CSS and Javascript. This Website comes with a stunning hero section as well as a masonry grid and service section. Besides the simple, yet classy design, this site comes with a bunch of custom animations and interactions that make browsing the website pleasant and engaging.",
+//     struggles: "This Project has unique navigation which I planned to make and implement using CSS. However, due to the animation complexity, I had to utilise Javascript to add and remove classes with the desired effects that I wanted.", 
+//     li1: "Responsive Navigation",
+//     li2: "Flexbox/Grid Design",
+//     li3: "Forms",
+//     li4: "Dynamic Reviews",
+//     li5: "Interactivity",
+//     li6: "CSS & JAVASCRIPT Animations",  
+//     src: ["assets/Screenshot (13).png", "assets/Screenshot (30).png", "assets/Screenshot (29).png"],
+//     LP: "https://skarzcode.github.io/Dynamic-Nav-Template/",
+//     SC: "https://github.com/skarzcode/Dynamic-Nav-Template"
+// },{
 
-    h1: "Quote Generator",
-    about: "Utilizing HTML/CSS and JavaScript as well as a Quote Generating API i created a Responsive Quote Generator with a tweet Functionality all while maintaining a simple and elegant design.",
-    struggles: "Due to the quotes being generated being random, at times the text would overflow the div. To overcome this I had to use an if statement to check the number of words and if it exceeded a set amount I would change the font of the text to accommodate for the div.", 
-    li1: "Quote Generating API",
-    li2: "Social Sharing Function",
-    li3: "SVG Background",
-    li4: "Responsive Design",
-    li5: "Interactivity",
-    li6: "CSS & JAVASCRIPT Animations",  
-    src: ["assets/Screenshot (19).png", "assets/Screenshot (31).png", "assets/Screenshot (32).png"],
-    LP: "https://skarzcode.github.io/Quote-Generator/",
-    SC: "https://github.com/skarzcode/Quote-Generator"
-},
-{
+//     h1: "Quote Generator",
+//     about: "Utilizing HTML/CSS and JavaScript as well as a Quote Generating API i created a Responsive Quote Generator with a tweet Functionality all while maintaining a simple and elegant design.",
+//     struggles: "Due to the quotes being generated being random, at times the text would overflow the div. To overcome this I had to use an if statement to check the number of words and if it exceeded a set amount I would change the font of the text to accommodate for the div.", 
+//     li1: "Quote Generating API",
+//     li2: "Social Sharing Function",
+//     li3: "SVG Background",
+//     li4: "Responsive Design",
+//     li5: "Interactivity",
+//     li6: "CSS & JAVASCRIPT Animations",  
+//     src: ["assets/Screenshot (19).png", "assets/Screenshot (31).png", "assets/Screenshot (32).png"],
+//     LP: "https://skarzcode.github.io/Quote-Generator/",
+//     SC: "https://github.com/skarzcode/Quote-Generator"
+// },
+// {
 
-    h1: "Calculator",
-    about: "An on-screen calculator using JavaScript, HTML, and CSS. With Built-in functions to evaluate expressions while maintaining a simple clean design.",
-    struggles: "A basic Calculator lets you chain on multiple different operations to the returned value. I struggled with this because when I would try it. NAN would be returned in my calc screen. This occurred because my operator function would run even if the currVal or previousVal was empty so I made a boolean to check if both values are populated and to then run an operator function on them.", 
-    li1: "DOM Manipulation",
-    li2: "Interactions",
-    li3: "Responsive Design",
-    li4: "Flexbox Design",
-    li5: "Minimal Desgin",
-    li6: "CSS Animations",  
-    src: ["assets/Screenshot (15).png", "assets/Screenshot (33).png","assets/Screenshot (15).png"],
-    LP: "https://skarzcode.github.io/TOP-Calculator/",
-    SC: "https://github.com/skarzcode/TOP-Calculator"
-},
-{
-    h1: "Tic Tac Toe",
-    about: "Utilising Object Oriented Programming I created a game of Tic Tac Toe that can be played in the browser against another Player or even against an AI.", 
-    struggles: "Whenever the AI was one move away from winning. The AI didn't populate the board with the final O to get three in a row and would just display the celebration screen making it seem as if it didn't place the move. I overcame this issue by setting a SetTimeOut after the move had been printed to the Dom and then ran the function to check if anyone had won.", 
-    li1: "AI Mode",
-    li2: "PVP Mode",
-    li3: "Factory Function/OOP",
-    li4: "DOM Manipulation",
-    li5: "Celebration Giphy",
-    li6: "Interactivity",  
-    src: ["assets/Screenshot (21).png", "assets/Screenshot (34).png", "assets/Screenshot (35).png"],
-    LP: "https://skarzcode.github.io/TOP-Tic-Tac-Toe/",
-    SC: "https://github.com/skarzcode/TOP-Tic-Tac-Toe"
-},
-];
-function renderElement (i){
-    projName.innerHTML = ProjInfoText[i].h1;
-    ProjAbout.innerHTML = ProjInfoText[i].about;
-    projStruggle.innerHTML = ProjInfoText[i].struggles;
-    list1.innerHTML = ProjInfoText[i].li1;
-    list2.innerHTML = ProjInfoText[i].li2;
-    list3.innerHTML = ProjInfoText[i].li3;
-    list4.innerHTML = ProjInfoText[i].li4;
-    list5.innerHTML = ProjInfoText[i].li5;
-    list6.innerHTML = ProjInfoText[i].li6;
-    ProjImage.src = ProjInfoText[i].src[0];
-    nav.forEach((navBtn) => {
-        navBtn.addEventListener("click", function(){
-            if(navBtn.id == 0){
-                ProjImage.src = ProjInfoText[i].src[0];   
-                nav[0].classList.remove("nav-color-red");
-                nav[1].classList.remove("nav-color-red");
-                nav[2].classList.remove("nav-color-red");
-                navBtn.classList.add("nav-color-red");
-            } else if(navBtn.id == 1){
-                ProjImage.src = ProjInfoText[i].src[1];   
-                nav[0].classList.remove("nav-color-red");
-                nav[1].classList.remove("nav-color-red");
-                nav[2].classList.remove("nav-color-red");
-                navBtn.classList.add("nav-color-red");
-            } else if(navBtn.id == 2){
-                ProjImage.src = ProjInfoText[i].src[2]; 
-                nav[0].classList.remove("nav-color-red");
-                nav[1].classList.remove("nav-color-red");
-                nav[2].classList.remove("nav-color-red");
-                navBtn.classList.add("nav-color-red");
-            }
-        })
-    });
-    livePreview.href = ProjInfoText[i].LP;
-    sourceCode.href = ProjInfoText[i].SC;
-    return;
-}
-projects.forEach((proj) => {
-    proj.addEventListener("click", function(){
-        if(overlay2){
-      overlay2.classList.add("overlaySlideIn");
-      ProjectInfo.classList.add("projOpacity");
-      if(proj.id == 0){
-        renderElement(0);
-      } else if (proj.id == 1){
-        renderElement(1);
-      } else if (proj.id == 2){
-        renderElement(2);
-      } else if (proj.id == 3){
-        renderElement(3);
-      } else if (proj.id == 4){
-        renderElement(4);
-      } else if (proj.id == 5){
-        renderElement(5);
-      };
-    }
-    })
-})
-closeBtn.addEventListener("click", function(){
-    overlay2.classList.remove("overlaySlideIn");
-    ProjectInfo.classList.remove("projOpacity"); 
-    nav[0].classList.add("nav-color-red");
-    nav[1].classList.remove("nav-color-red");
-    nav[2].classList.remove("nav-color-red");
-    // setTimeout(() => {
-    //  ProjImage.src = " ";
+//     h1: "Calculator",
+//     about: "An on-screen calculator using JavaScript, HTML, and CSS. With Built-in functions to evaluate expressions while maintaining a simple clean design.",
+//     struggles: "A basic Calculator lets you chain on multiple different operations to the returned value. I struggled with this because when I would try it. NAN would be returned in my calc screen. This occurred because my operator function would run even if the currVal or previousVal was empty so I made a boolean to check if both values are populated and to then run an operator function on them.", 
+//     li1: "DOM Manipulation",
+//     li2: "Interactions",
+//     li3: "Responsive Design",
+//     li4: "Flexbox Design",
+//     li5: "Minimal Desgin",
+//     li6: "CSS Animations",  
+//     src: ["assets/Screenshot (15).png", "assets/Screenshot (33).png","assets/Screenshot (15).png"],
+//     LP: "https://skarzcode.github.io/TOP-Calculator/",
+//     SC: "https://github.com/skarzcode/TOP-Calculator"
+// },
+// {
+//     h1: "Tic Tac Toe",
+//     about: "Utilising Object Oriented Programming I created a game of Tic Tac Toe that can be played in the browser against another Player or even against an AI.", 
+//     struggles: "Whenever the AI was one move away from winning. The AI didn't populate the board with the final O to get three in a row and would just display the celebration screen making it seem as if it didn't place the move. I overcame this issue by setting a SetTimeOut after the move had been printed to the Dom and then ran the function to check if anyone had won.", 
+//     li1: "AI Mode",
+//     li2: "PVP Mode",
+//     li3: "Factory Function/OOP",
+//     li4: "DOM Manipulation",
+//     li5: "Celebration Giphy",
+//     li6: "Interactivity",  
+//     src: ["assets/Screenshot (21).png", "assets/Screenshot (34).png", "assets/Screenshot (35).png"],
+//     LP: "https://skarzcode.github.io/TOP-Tic-Tac-Toe/",
+//     SC: "https://github.com/skarzcode/TOP-Tic-Tac-Toe"
+// },
+// ];
+// function renderElement (i){
+//     projName.innerHTML = ProjInfoText[i].h1;
+//     ProjAbout.innerHTML = ProjInfoText[i].about;
+//     projStruggle.innerHTML = ProjInfoText[i].struggles;
+//     list1.innerHTML = ProjInfoText[i].li1;
+//     list2.innerHTML = ProjInfoText[i].li2;
+//     list3.innerHTML = ProjInfoText[i].li3;
+//     list4.innerHTML = ProjInfoText[i].li4;
+//     list5.innerHTML = ProjInfoText[i].li5;
+//     list6.innerHTML = ProjInfoText[i].li6;
+//     ProjImage.src = ProjInfoText[i].src[0];
+//     nav.forEach((navBtn) => {
+//         navBtn.addEventListener("click", function(){
+//             if(navBtn.id == 0){
+//                 ProjImage.src = ProjInfoText[i].src[0];   
+//                 nav[0].classList.remove("nav-color-red");
+//                 nav[1].classList.remove("nav-color-red");
+//                 nav[2].classList.remove("nav-color-red");
+//                 navBtn.classList.add("nav-color-red");
+//             } else if(navBtn.id == 1){
+//                 ProjImage.src = ProjInfoText[i].src[1];   
+//                 nav[0].classList.remove("nav-color-red");
+//                 nav[1].classList.remove("nav-color-red");
+//                 nav[2].classList.remove("nav-color-red");
+//                 navBtn.classList.add("nav-color-red");
+//             } else if(navBtn.id == 2){
+//                 ProjImage.src = ProjInfoText[i].src[2]; 
+//                 nav[0].classList.remove("nav-color-red");
+//                 nav[1].classList.remove("nav-color-red");
+//                 nav[2].classList.remove("nav-color-red");
+//                 navBtn.classList.add("nav-color-red");
+//             }
+//         })
+//     });
+//     livePreview.href = ProjInfoText[i].LP;
+//     sourceCode.href = ProjInfoText[i].SC;
+//     return;
+// }
+// projects.forEach((proj) => {
+//     proj.addEventListener("click", function(){
+//         if(overlay2){
+//       overlay2.classList.add("overlaySlideIn");
+//       ProjectInfo.classList.add("projOpacity");
+//       if(proj.id == 0){
+//         renderElement(0);
+//       } else if (proj.id == 1){
+//         renderElement(1);
+//       } else if (proj.id == 2){
+//         renderElement(2);
+//       } else if (proj.id == 3){
+//         renderElement(3);
+//       } else if (proj.id == 4){
+//         renderElement(4);
+//       } else if (proj.id == 5){
+//         renderElement(5);
+//       };
+//     }
+//     })
+// })
+// closeBtn.addEventListener("click", function(){
+//     overlay2.classList.remove("overlaySlideIn");
+//     ProjectInfo.classList.remove("projOpacity"); 
+//     nav[0].classList.add("nav-color-red");
+//     nav[1].classList.remove("nav-color-red");
+//     nav[2].classList.remove("nav-color-red");
+//     // setTimeout(() => {
+//     //  ProjImage.src = " ";
         
-    // }, 2000);
-});
-box.forEach((popup) => {
-    popup.addEventListener("click", () => {
-        popup.classList.toggle("active");
-    })
-})
+//     // }, 2000);
+// });
+// box.forEach((popup) => {
+//     popup.addEventListener("click", () => {
+//         popup.classList.toggle("active");
+//     })
+// })
 
 
 // glitch();

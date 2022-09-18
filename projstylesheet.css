@@ -19,6 +19,11 @@ body{
     position: relative;
 }
 
+.navBar a{
+    color: red;
+    text-decoration: none;
+}
+
 .outerContainer{
     width: 100%;
     height: 95vh;
@@ -74,12 +79,44 @@ body{
    border-radius: 20px;
 }
 
+.s1_2{
+    background: url(assets/Screenshot\ \(54\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px; 
+}
+
+.s1_3{
+    background: url(assets/Screenshot\ \(62\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px; 
+}
+
 .s2{
         background: url(assets/Screenshot\ \(47\).png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
         border-radius: 20px;
+}
+
+.s2_2{
+    background: url(assets/Screenshot\ \(55\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px; 
+}
+
+.s2_3{
+    background: url(assets/Screenshot\ \(67\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px; 
 }
 
 .s3{
@@ -90,12 +127,36 @@ body{
     border-radius: 20px;
 }
 
+.s3_2{
+    background: url(assets/Screenshot\ \(56\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px; 
+}
+
+.s3_3{
+    background: url(assets/Screenshot\ \(65\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px; 
+}
+
 .s4{
     background: url(assets/Screenshot\ \(50\).png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 20px;  
+}
+
+.s4_3{
+    background: url(assets/Screenshot\ \(66\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px; 
 }
 
 .projIntro{
@@ -274,8 +335,40 @@ body{
    border-radius: 20px;
 }
 
+.s1-3{
+    background: url(assets/IMG_0305.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px; 
+}
+
+.s1-4{
+    background: url(assets/Screenshot\ \(70\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px; 
+}
+
 .s2-2{
     background: url(assets/IMG_0307.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px;
+}
+
+.s2-3{
+    background: url(assets/IMG_0306.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px;
+}
+
+.s2-4{
+    background: url(assets/Screenshot\ \(71\).png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -290,6 +383,14 @@ body{
    border-radius: 20px;
 }
 
+.s3-3{
+    background: url(assets/IMG_0303.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px;
+}
+
 .outerContainer4{
     width: 100%;
     height: 50vh;
@@ -298,7 +399,6 @@ body{
     justify-content: center;
     align-items: center; 
     flex-direction: column;
-    background-color: red;
     margin: 50px auto;
 }
 

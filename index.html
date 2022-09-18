@@ -17,7 +17,7 @@
             <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="InvoiceApp.html">Projects</a></li>
+                <li><a href="#Projects">Projects</a></li>
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -52,36 +52,18 @@
 
     <section class="about" id="about">
         <div class="clipPathDiv">
-            <div class="ClipContainer">
-                <h1 class="reveal3">Check Me Out On TikTok: <span class="TikTok">Tech.Mali</span></h1>
-                <div class="box box1 reveal3">
-                <video src="assets\codingvid.webm" autoplay loop muted playsinline></video>
-                    <!-- <div class="content">
-                        <h2>Slide one</h2>
-                    </div> -->
-                </div>
-                <div class="box box2 reveal3">
-                    <video class="largervid" src="assets\bball.webm" autoplay loop muted playsinline></video>
-                    <!-- <div class="content">
-                        <h2>Slide Two</h2>
-                    </div> -->
-                </div>
-                <div class="box box3 reveal3">
-                    <video src="assets\whiteboard.webm" autoplay loop muted playsinline></video>
-                    <!-- <div class="content">
-                        <h2>Slide Three</h2>
-                    </div> -->
-                </div>
-            </div>
             <aside class="wrapper">
                 <h2 class="reveal4">I'm a <span></span></h2>
-                <p class="reveal4">I'm a Front-End Developer From London. I Have a Passion For UI Effects, Animations And Creating Intuitive, Dynamic User Experiences.</p>
-                <p class="reveal4"> With A Background In Sales And Customer Service. I Create And Realize Captivating Experiences With Visual Aesthetics And a Sense Of Design While Implementing Professional But Unique Practices. Giving Each site A Distinctive Feels Catered Towards The Brand.</p>
+                <p class="reveal4">I'm a Developer From London. I Have a Passion For Problem Solving, UI Effects, Animations And Creating Intuitive Dynamic User Experiences.</p>
+                <p class="reveal4"> With A Background In Sales And Customer Service. I Create And Realise Captivating Experiences With Visual Aesthetics And a Sense Of Design While Implementing Professional But Unique Practices. Giving Each site/App A Distinctive Feels Catered Towards The Brand.</p>
             </aside>
+            <div class="Tiktok-Conatiner">
+                <h1 class="reveal3">I'm On TikTok!</h1>
+                <img class="reveal3" src="assets\IMG_6367_iphone13blue_portrait.png" alt=""></div>
         </div>
     </section>
 
-    <section class="Projects" id="Projects">
+    <!-- <section class="Projects" id="Projects">
         <div class="project-overlay">
             <img class="close" src="assets\cancel.svg" alt="">
             <div class="Project-info">
@@ -161,10 +143,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="ProjectSlider">
-        <div class="projSliderContainer">
+    <section id="Projects" class="ProjectSlider">
+        <h1 class="ProjectsHeader reveal1">Projects</h1>
+        <div class="projSliderContainer reveal">
 
             <!-- Slider main container -->
 <div class="swiper">
@@ -175,8 +158,8 @@
         <h1 class="sliderH1">INVOICE WEBAPP</h1>
         <div class="projNav">
             <div class="projButtons">
-                <button class="LivePreviewBtn">Live Preview</button>
-                <button class="SourceCodeBtn">Source Code</button>
+                <button class="LivePreviewBtn"  onClick="window.open('https://skarzcode.github.io/Invoice-WebApp/');">Live Preview</button>
+                <button class="SourceCodeBtn"  onClick="window.open('https://github.com/skarzcode/Invoice-WebApp');">Source Code</button>
             </div>
         </div>
       </div>
@@ -184,12 +167,20 @@
         <h1 class="sliderH1">DEV JOB BOARD</h1>
         <div class="projNav">
             <div class="projButtons">
-                <button class="LivePreviewBtn">Live Preview</button>
-                <button class="SourceCodeBtn">Source Code</button>
+                <button class="LivePreviewBtn" onClick="window.open('https://skarzcode.github.io/Devjob-Webapp/');">Live Preview</button>
+                <button class="SourceCodeBtn" onClick="window.open('https://github.com/skarzcode/Devjob-Webapp');">Source Code</button>
             </div>
       </div>
       </div>
-      <div class="swiper-slide s3">Slide 3</div>
+      <div class="swiper-slide s3">
+        <h1 class="sliderH1">Property Website</h1>
+        <div class="projNav">
+            <div class="projButtons">
+                <button class="LivePreviewBtn" onClick="window.open('https://skarzcode.github.io/RPJ-Test/');">Live Preview</button>
+                <button class="SourceCodeBtn" onClick="window.open('https://github.com/skarzcode/RPJ-Test');">Source Code</button>
+            </div>
+      </div>
+      </div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -206,6 +197,7 @@
 
         </div>
     </section>
+    <section class="empty-space"></section>
 
 
     <script src="app.js"></script>
