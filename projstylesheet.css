@@ -391,6 +391,33 @@ body{
    border-radius: 20px;
 }
 
+.M1{
+    background: url(assets/preview2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+.M2{
+    background: url(assets/Screenshot\ \(62\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+.M3{
+    background: url(assets/preview.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
 .outerContainer4{
     width: 100%;
     height: 50vh;
@@ -414,7 +441,12 @@ body{
     background-color: white;
 }
 
-
+@media only screen and (min-width: 1800px){
+    .outerContainer4 h1{
+        font-size: 2vw;
+        background-color: red;
+    }
+}
 
 @media only screen and (max-width: 1100px){
     .outerContainer {
@@ -466,7 +498,7 @@ body{
     }
 
     .projSliderContainer {
-        width: 100%;
+        width: 50%;
         height: 50%;
         border-radius: 20px;
         margin: 20px auto;
@@ -668,7 +700,7 @@ body{
     }
 
     .projSliderContainer {
-        width: 90%;
+        width: 50%;
         border-radius: 20px;
         margin: 20px auto;
     }
