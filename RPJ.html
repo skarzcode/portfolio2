@@ -23,8 +23,8 @@
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#Projects">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#Projects">Projects</a></li>
             </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -66,9 +66,9 @@
                     <h1>Property Website</h1>
                     <p>A Multifunctional Property Development website, Utilizing HTML/CSS and Javascript to create a dynamic site with a Background Video for a Hero section, a Property Page, blog page, and more, While maintaining a simple, yet clean structure and design</p>
                     <div class="projButtons">
-                        <button class="LivePreviewBtn">Live Preview</button>
-                        <button class="SourceCodeBtn">Source Code</button>
-                    </div>
+                      <button class="LivePreviewBtn" onClick="window.open('https://skarzcode.github.io/RPJ-Test/');">Live Preview</button>
+                      <button class="SourceCodeBtn" onClick="window.open('https://github.com/skarzcode/RPJ-Test');">Source Code</button>
+                  </div>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
           </ul>
           <div class="imgContainer">
             <h4>Watch a detailed video on my Tiktok</h4>
-            <img class="Iphone" src="assets\IMG_6291_iphone13blue_portrait.png" alt="Iphone Mockup">
+            <img class="Iphone" src="assets\IMG_6384_iphone13blue_portrait.png" alt="Iphone Mockup">
           </div>
           
         </div>
@@ -138,9 +138,9 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide M1"></div>
-          <div class="swiper-slide M3"></div>
-          <div class="swiper-slide M2"></div>
+          <div id="1" class="swiper-slide M1 projSlide"></div>
+          <div id="2" class="swiper-slide M2 projSlide"></div>
+          <div id="3" class="swiper-slide M3 projSlide"></div>
 
         </div>
         <!-- If we need pagination -->
@@ -254,6 +254,24 @@ const swiper3 = new Swiper('.swiper3', {
   // And if we need scrollbar
  
 });
+
+const ProjectSlides = document.querySelectorAll(".projSlide");
+
+ProjectSlides.forEach((slide) => {
+    slide.addEventListener("click", function(e){
+        if(slide.id == 1){
+            touchStartPreventDefault: false;
+            window.location = 'InvoiceApp.html';
+        } else if(slide.id == 2){
+            touchStartPreventDefault: false;
+            window.location = 'DevJobsApp.html';
+            console.log(2)
+        } else if(slide.id == 3){
+            touchStartPreventDefault: false;
+            window.location = 'RPJ.html';
+        }
+    })
+})
     </script>
 </body>
 </html>
