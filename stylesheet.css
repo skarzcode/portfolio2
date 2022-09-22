@@ -742,7 +742,6 @@ transition: 1s ease-in-out;
     font-size: 4vw;
     margin: 20px auto;
     color: black;
-    text-decoration:underline red 5px;
 }
 
 .projSliderContainer{
@@ -875,6 +874,11 @@ transition: 1s ease-in-out;
         width: 70%;
         height: 350px;
         font-size: 5vw;
+    }
+
+    .wrapper p {
+        line-height: 3vw;
+       
     }
 }
 
