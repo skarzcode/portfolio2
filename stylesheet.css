@@ -554,6 +554,10 @@ border-bottom: solid red 2px;
     object-fit: contain;
 }
 
+.tiktokLink{
+    font-size: 1.8vw;
+}
+
 .Tiktok-Conatiner h1{
     font-size: 3vw;
 }
@@ -1266,6 +1270,10 @@ transition: 1s ease-in-out;
         font-size: 4vw;
     }
 
+    .tiktokLink{
+        font-size: 2.9vw;
+    }
+
     .ProjectsHeader {
         font-size: 5vw;
     }
@@ -1354,6 +1362,10 @@ transition: 1s ease-in-out;
         font-size: 5.5vw;
     }
 
+    .tiktokLink{
+        font-size: 4vw;
+    }
+
     .ProjectsHeader {
         font-size: 5.5vw;
     }
@@ -1367,6 +1379,10 @@ transition: 1s ease-in-out;
 
     .Tiktok-Conatiner h1 {
         font-size: 6.3vw;
+    }
+
+    .tiktokLink{
+        font-size: 5vw;
     }
 
     .ProjectsHeader {
